@@ -1,5 +1,5 @@
 
-import testRunner from '../src/unitTestRunner.js'
+import { testRunner } from '../index'
 
 testRunner({
     source: 'tests',

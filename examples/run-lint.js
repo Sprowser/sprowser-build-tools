@@ -1,5 +1,5 @@
 
-import lintRunner from '../src/lintRunner.js'
+import { lintRunner } from '../index'
 
 lintRunner({
     source: [
