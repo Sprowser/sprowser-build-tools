@@ -1,0 +1,22 @@
+{
+  "name": "sprowser-build-tools",
+  "version": "0.0.5",
+  "description": "Sprowser build tools.",
+  "main": "index.js",
+  "author": "Dave Baskin <dfbaskin@gmail.com>",
+  "license": "apache-2.0",
+  "scripts": {
+    "example-test-runner": "./node_modules/.bin/babel-node ./examples/run-tests.js"
+  },
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "rx": "^2.5.3"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "chalk": "^1.0.0",
+    "eslint": "^0.22.1",
+    "jasmine": "^2.3.1",
+    "jasmine-terminal-reporter": "^0.9.1"
+  }
+}
