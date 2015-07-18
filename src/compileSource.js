@@ -1,6 +1,6 @@
 
-import { fileFinder } from './fileFinder'
-import { normalizeFileOptions } from './fileOptions'
+import { fileFinder } from './helpers/fileFinder'
+import { normalizeFileOptions } from './helpers/fileOptions'
 import Rx from 'rx'
 import path from 'path'
 import fs from 'fs'
@@ -13,7 +13,7 @@ let readFile = Rx.Observable.fromNodeCallback(fs.readFile)
 let writeFile = Rx.Observable.fromNodeCallback(fs.writeFile)
 let mkdirIgnoreError = Rx.Observable.fromNodeCallback((p, cb) => fs.mkdir(p, () => cb()))
 
-export function compileSource(options) {
+export default options => {
 
     options = normalizeFileOptions(options)
 

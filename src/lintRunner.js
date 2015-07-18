@@ -1,5 +1,5 @@
 
-import { fileFinder } from './helpers'
+import { fileFinder } from './helpers/fileFinder'
 import fs from 'fs'
 import chalk from 'chalk'
 import Rx from 'rx'
@@ -12,7 +12,6 @@ let linter = new CLIEngine(eslintOptions)
 
 export default options => {
 
-    options = options || {}
     let lintStats = {
         totalFileCount: 0,
         errorFileCount: 0,
