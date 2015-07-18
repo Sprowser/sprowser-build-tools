@@ -4,22 +4,23 @@
   "description": "Sprowser build tools.",
   "main": "index.js",
   "author": "Dave Baskin <dfbaskin@gmail.com>",
-  "license": "apache-2.0",
+  "license": "Apache-2.0",
   "scripts": {
     "example-tests": "./node_modules/.bin/babel-node ./examples/run-tests.js",
     "example-lint": "./node_modules/.bin/babel-node ./examples/run-lint.js"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Sprowser/sprowser-build-tools.git"
+    "type": "git",
+    "url": "https://github.com/Sprowser/sprowser-build-tools.git"
   },
   "dependencies": {
-    "lodash": "^3.9.3",
-    "rx": "^2.5.3",
-    "chalk": "^1.0.0",
+    "babel": "^5.6.23",
+    "chalk": "^1.1.0",
     "eslint": "^0.22.1",
     "jasmine": "^2.3.1",
-    "jasmine-terminal-reporter": "^0.9.1"
+    "jasmine-terminal-reporter": "^0.9.1",
+    "lodash": "^3.10.0",
+    "rx": "^2.5.3"
   },
   "devDependencies": {
     "babel": "^5.5.6"
