@@ -1,6 +1,6 @@
 {
   "name": "sprowser-build-tools",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Sprowser build tools.",
   "main": "dist/index.js",
   "author": "Dave Baskin <dfbaskin@gmail.com>",
