@@ -1,12 +1,10 @@
 
-import { lintRunner } from '../index'
+import { lintRunner } from '../src/index'
 
 lintRunner({
     source: [
         '.',
-        './tests',
-        '../src',
-        '..'
+        './tests'
     ],
     base: __dirname
 })

@@ -2,10 +2,12 @@
   "name": "sprowser-build-tools",
   "version": "0.0.5",
   "description": "Sprowser build tools.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Dave Baskin <dfbaskin@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
+    "install": "./node_modules/.bin/babel-node ./scripts/compileSource.js",
+    "lint": "./node_modules/.bin/babel-node ./scripts/lintSource.js",
     "example-tests": "./node_modules/.bin/babel-node ./examples/run-tests.js",
     "example-lint": "./node_modules/.bin/babel-node ./examples/run-lint.js"
   },
@@ -21,8 +23,5 @@
     "jasmine-terminal-reporter": "^0.9.1",
     "lodash": "^3.10.0",
     "rx": "^2.5.3"
-  },
-  "devDependencies": {
-    "babel": "^5.5.6"
   }
 }

@@ -1,5 +1,5 @@
 
-import { testRunner } from '../index'
+import { testRunner } from '../src/index'
 
 testRunner({
     source: 'tests',
